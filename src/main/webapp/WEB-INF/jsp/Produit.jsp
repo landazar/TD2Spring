@@ -7,11 +7,11 @@
 <title>Nom Produit</title>
 </head>
 <body>
-	<p>nom : ${ param.nom }</p>
-	<p>prix : ${ param.prix }</p>
+	<p>nom : ${ nom }</p>
+	<p>prix : ${ prix }</p>
 	
-	<p>nom: ${ param.nom } </p>
-	<p>prix HT : ${ param.prix }</p>
+	<p>nom: ${ nom } </p>
+	<p>prix HT : ${ prix }</p>
 	<p>prix TTC : ${ prixTTC }</p>
 </body>
 </html>

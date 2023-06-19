@@ -26,7 +26,7 @@ public class ProduitServiceImpl implements IProduitService {
 		session.beginTransaction();
 		try {
 			
-			listeP = session.createNativeQuery("select * from Etudiant", Produit.class).list();
+			listeP = session.createNativeQuery("select * from Produit", Produit.class).list();
 			
 			session.getTransaction().commit();
 		} catch (Exception e) {
