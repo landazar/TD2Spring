@@ -1,6 +1,16 @@
 package com.inti.service;
 
-public interface IProduitService {
+import java.util.List;
 
-	public void afficherNomProduit();
+
+import com.inti.model.Produit;
+
+public interface IProduitService {
+	
+	public List<Produit> getproduits();
+	public void saveProduit(Produit p);
+	public Produit getProduit(int id);
+	public void deleteProduit(int id);
+	
+
 }
