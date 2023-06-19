@@ -38,6 +38,7 @@
       
       <td>
         <a href="supprimerProduit?id=${ produit.id }"><button type="button" class="btn btn-danger">Supprimer</button></a>
+        <a href="modifierProduit?id=${ produit.id }"><button type="button" class="btn btn-danger">Modifier</button></a>
      </td>
     </tr>
     </c:forEach>

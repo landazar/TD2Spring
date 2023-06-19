@@ -87,4 +87,21 @@ public class ProduitController {
 		m.addAttribute("produit", ips.getProduit(id));
 		return "afficherProduit";
 	}
+	
+	@GetMapping("modifierProduit")
+	public String modifierProduit(@RequestParam("id") int id, Model m)
+	{
+		m.addAttribute("p1", ips.getProduit(id));
+		
+		return "modifierProduit";
+	}
+	
+	@PostMapping("modifierProduit")
+	public String updateProduit(@ModelAttribute("produit") Produit p)
+	{
+		ips.updateProduit(p);
+		
+		return "listeProduit";
+	}
+
 }

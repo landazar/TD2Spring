@@ -90,4 +90,22 @@ public class ProduitServiceImpl implements IProduitService {
 		
 	}
 
+	@Override
+	public void updateProduit(Produit p) {
+		
+		session.beginTransaction();
+		try {
+			
+			session.update(p);
+			
+			session.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		}
+		
+	}
+
+	
+
 }

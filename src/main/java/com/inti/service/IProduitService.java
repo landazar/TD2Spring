@@ -11,6 +11,7 @@ public interface IProduitService {
 	public void saveProduit(Produit p);
 	public Produit getProduit(int id);
 	public void deleteProduit(int id);
+	public void updateProduit(Produit p);
 	
 
 }
